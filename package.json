@@ -1,0 +1,36 @@
+{
+  "name": "dev5_tweede_examenkans_opdracht",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "migrate:make": "npx knex migrate:make init --migrations-directory src/db/migrations",
+    "migrate:latest": "npx knex migrate:latest --knexfile src/db/knexfile.js",
+    "build": "babel src --out-dir dist",
+    "start": "node dist/index.js",
+    "test": "jest --detectOpenHandles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SouhailaBenallal/DEV5_tweede_examenkans_opdracht.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SouhailaBenallal/DEV5_tweede_examenkans_opdracht/issues"
+  },
+  "homepage": "https://github.com/SouhailaBenallal/DEV5_tweede_examenkans_opdracht#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.95.9",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12",
+    "supertest": "^6.1.4"
+}
+}
