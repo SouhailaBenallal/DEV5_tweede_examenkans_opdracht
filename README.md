@@ -29,3 +29,7 @@ npm run migrate:make
 ```
 npm run migrate:latest
 ```
+### Compiles and hot-reloads for testing
+```
+npm run test
+```
