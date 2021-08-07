@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  server:
+    container_name: dev_5_api
+    build: './api'
+    ports:
+      - '3000:3000'
+  db:
+    container_name: dev_5_store
+    image: 'postgres'
+    environment:
+      POSTGRES_PASSWORD: 'postgres'
+      POSTGRES_USER: 'postgres'
+      POSTGRES_DB: dev_5
+    volumes:
+      - data:/var/lib/postgresql/data
+
+volumes:
+  data:

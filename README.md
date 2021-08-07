@@ -1,35 +1,21 @@
-# Logs
+# Docker for logs API
 
-## Project setup
+## Builds, (re)creates, starts, and attaches to containers for a service.
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run dev
+docker-compose up --build -d
 ```
 
-### Build the project
+## Stops containers and removes containers, networks, volumes, and images created by up
 ```
-npm run build
-```
-
-### Compiles and hot-reloads for production
-```
-npm start
+docker-compose down
 ```
 
-### Creates a new migration
+## Create a database in postgres in docker
 ```
-npm run migrate:make
+docker exec -it <container-id> bash
 ```
 
-### Runs all migrations that have not yet been run
+## Runs all migrations that have not yet been run in docker
 ```
-npm run migrate:latest
-```
-### Compiles and hot-reloads for testing
-```
-npm run test
+docker exec <image-name of server> npm run migrate:latest
 ```
