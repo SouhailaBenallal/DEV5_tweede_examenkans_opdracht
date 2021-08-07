@@ -1,4 +1,4 @@
-# Logs
+# DEV_5 Project
 
 ## Project setup
 ```
