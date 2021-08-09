@@ -17,5 +17,5 @@ docker exec -it <container-id> bash
 
 ## Runs all migrations that have not yet been run in docker
 ```
-docker exec <image-name of server> npm run migrate:latest
+docker exec <image identifier> npm run migrate:latest
 ```
